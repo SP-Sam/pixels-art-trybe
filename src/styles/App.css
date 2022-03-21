@@ -34,9 +34,9 @@ main {
 .color-table {
   display: grid;
   grid-template-columns: auto auto auto auto auto;
-  gap: 0.15rem;
+  gap: 0.2rem;
   border-radius: 0.4rem;
-  padding: 0.5rem;
+  padding: 0.6rem;
   margin-top: 1.5rem;
-  background-color: #1f0b4d;
+  background-color: #2d0096;
 }
