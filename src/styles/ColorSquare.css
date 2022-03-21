@@ -1,0 +1,24 @@
+.color-square {
+  width: 3.4375rem;
+  height: 3.4375rem;
+  border-radius: 5px;
+  margin: 0 0.1rem;
+}
+.color-square:hover {
+  opacity: 0.9;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.color-1 {
+  background-color: #000;
+}
+.color-2 {
+  background-color: #16db93;
+}
+.color-3 {
+  background-color: #048ba8;
+}
+.color-4 {
+  background-color: #a4036f;
+}

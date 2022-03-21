@@ -1,6 +1,9 @@
+import ColorSquare from './components/ColorSquare';
 import './styles/App.css';
 
 function App() {
+  const colors = [1, 2, 3, 4];
+
   return (
     <div className="home-container">
       <header>
@@ -8,8 +11,10 @@ function App() {
       </header>
 
       <main>
-        <div>
-          <h2>Cores</h2>
+        <h2>Paleta de cores 🎨</h2>
+
+        <div className="color-palette">
+          {colors.map(color => <ColorSquare key={color} color={color}/>)}
         </div>
 
         <h2>Botão</h2>
