@@ -6,4 +6,4 @@ function ColorSquare({ color }) {
   )
 }
 
-export default ColorSquare
+export default ColorSquare;

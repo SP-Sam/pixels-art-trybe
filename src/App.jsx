@@ -1,3 +1,4 @@
+import ClearButton from './components/ClearButton';
 import ColorSquare from './components/ColorSquare';
 import './styles/App.css';
 
@@ -17,7 +18,7 @@ function App() {
           {colors.map(color => <ColorSquare key={color} color={color}/>)}
         </div>
 
-        <h2>Botão</h2>
+        <ClearButton />
 
         <div>
           <h2>Tabela</h2>
