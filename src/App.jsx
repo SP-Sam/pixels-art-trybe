@@ -1,5 +1,9 @@
 function App() {
-  return <h1>Hello, world!</h1>;
+  return (
+    <>
+      <h1>Paleta de Cores 🖌️</h1>
+    </>
+  );
 }
 
 export default App;
