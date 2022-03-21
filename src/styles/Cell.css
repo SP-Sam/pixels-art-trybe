@@ -1,0 +1,9 @@
+.cell {
+  width: 3rem;
+  height:  3rem;
+  border: 1px solid grey;
+  border-radius: 0.2rem;
+}
+.cell:hover {
+  cursor: pointer;
+}

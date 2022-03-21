@@ -30,3 +30,13 @@ main {
   display: flex;
   margin-top: 1rem;
 }
+
+.color-table {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 0.15rem;
+  border: 1px solid #1f0b4d;
+  border-radius: 0.4rem;
+  padding: 0.5rem;
+  margin-top: 1.5rem;
+}

@@ -1,9 +1,21 @@
+import Cell from './components/Cell';
 import ClearButton from './components/ClearButton';
 import ColorSquare from './components/ColorSquare';
 import './styles/App.css';
 
 function App() {
   const colors = [1, 2, 3, 4];
+
+  const generateCells = () => {
+    const CELL_QUANTITY = 25;
+    const cellList = [];
+
+    for (let i = 1; i <= CELL_QUANTITY; i++) {
+      cellList.push(<Cell />);
+    }
+
+    return cellList
+  }
 
   return (
     <div className="home-container">
@@ -20,8 +32,8 @@ function App() {
 
         <ClearButton />
 
-        <div>
-          <h2>Tabela</h2>
+        <div className="color-table">
+          {generateCells()}
         </div>
       </main>
     </div>
