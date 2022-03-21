@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="home-container">
       <header>
-        <h1>Paleta de Cores 🖌️</h1>
+        <h1>Pixels Art 🖌️</h1>
       </header>
 
       <main>
