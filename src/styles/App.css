@@ -35,8 +35,8 @@ main {
   display: grid;
   grid-template-columns: auto auto auto auto auto;
   gap: 0.15rem;
-  border: 1px solid #1f0b4d;
   border-radius: 0.4rem;
   padding: 0.5rem;
   margin-top: 1.5rem;
+  background-color: #1f0b4d;
 }
