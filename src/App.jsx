@@ -54,7 +54,13 @@ function App() {
   return (
     <div className="home-container">
       <header>
+        <a href="https://www.linkedin.com/in/spsam/" target="_blank" rel="noopener noreferrer">
+          <img src="https://img.icons8.com/windows/32/ffffff/linkedin-2.png" alt="Link do linkedIn"/>
+        </a>
         <h1>Pixels Art 🖌️</h1>
+        <a href="https://github.com/SP-Sam/pixels-art-trybe" target="_blank" rel="noopener noreferrer">
+          <img src="https://img.icons8.com/windows/32/ffffff/github.png" alt='Link do GitHub'/>
+        </a>
       </header>
 
       <main>
