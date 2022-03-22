@@ -39,6 +39,18 @@ function App() {
     }
   };
 
+  const clear = () => {
+    const cellList = [...document.getElementsByClassName('cell')];
+
+    cellList.forEach(({ classList }) => {
+      const currentClasses = classList;
+
+      if (classList.length === 2) {
+        classList.remove(currentClasses[1]);
+      }
+    })
+  };
+
   return (
     <div className="home-container">
       <header>
@@ -54,7 +66,7 @@ function App() {
           ))}
         </div>
 
-        <ClearButton />
+        <ClearButton clear={clear} />
         
         <h3>Cor atual</h3>
         <div className={`current-color ${colorClass}`}></div>

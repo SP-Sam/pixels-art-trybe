@@ -1,8 +1,8 @@
 import '../styles/ClearButton.css'
 
-function ClearButton() {
+function ClearButton({ clear }) {
   return (
-    <button>Limpar</button>
+    <button onClick={clear}>Limpar</button>
   )
 }
 
