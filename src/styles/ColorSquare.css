@@ -10,15 +10,15 @@
   transition: 0.15s;
 }
 
-.color-1 {
+.first-color {
   background-color: #000;
 }
-.color-2 {
+.second-color {
   background-color: #16db93;
 }
-.color-3 {
+.third-color {
   background-color: #048ba8;
 }
-.color-4 {
+.fourth-color {
   background-color: #a4036f;
 }

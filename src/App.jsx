@@ -1,21 +1,43 @@
+import { useState } from 'react';
 import Cell from './components/Cell';
 import ClearButton from './components/ClearButton';
 import ColorSquare from './components/ColorSquare';
 import './styles/App.css';
 
-function App() {
-  const colors = [1, 2, 3, 4];
+const generateCells = (setClassList) => {
+  const CELL_QUANTITY = 25;
+  const cellList = [];
 
-  const generateCells = () => {
-    const CELL_QUANTITY = 25;
-    const cellList = [];
-
-    for (let i = 1; i <= CELL_QUANTITY; i++) {
-      cellList.push(<Cell />);
-    }
-
-    return cellList
+  for (let i = 1; i <= CELL_QUANTITY; i++) {
+    cellList.push(<Cell key={i} setClassList={setClassList}/>);
   }
+
+  return cellList
+}
+
+function App() {
+  const colors = ['first', 'second', 'third', 'fourth'];
+
+  const [colorClass, setColorClass] = useState('first-color');
+
+  const getClassList = ({ target: { classList } }) => {
+    setColorClass(classList[1]);
+  };
+
+  const setClassList = ({ target: { classList } }) => {
+    if (classList.length === 1) {
+      classList.add(colorClass);
+    } else {
+      const currentClasses = [...classList];
+      
+      if (currentClasses[1] === colorClass) {
+        classList.remove(colorClass);
+      } else {
+        classList.remove(currentClasses[1]);
+        classList.add(colorClass);
+      }
+    }
+  };
 
   return (
     <div className="home-container">
@@ -27,13 +49,18 @@ function App() {
         <h2>Paleta de cores 🎨</h2>
 
         <div className="color-palette">
-          {colors.map(color => <ColorSquare key={color} color={color}/>)}
+          {colors.map(color => (
+            <ColorSquare key={color} color={color} getClassList={getClassList}/>
+          ))}
         </div>
 
         <ClearButton />
+        
+        <h3>Cor atual</h3>
+        <div className={`current-color ${colorClass}`}></div>
 
         <div className="color-table">
-          {generateCells()}
+          {generateCells(setClassList)}
         </div>
       </main>
     </div>
