@@ -1,8 +1,8 @@
 import '../styles/Cell.css';
 
-function Cell({ color, setClassList }) {
+function Cell({ setClassList }) {
   return (
-    <div className={"cell"} onClick={setClassList}></div>
+    <div className="cell" onClick={setClassList}></div>
   )
 }
 

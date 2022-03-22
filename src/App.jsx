@@ -72,10 +72,10 @@ function App() {
           ))}
         </div>
 
-        <ClearButton clear={clear} />
-        
         <h3>Cor atual</h3>
         <div className={`current-color ${colorClass}`}></div>
+
+        <ClearButton clear={clear} />
 
         <div className="color-table">
           {generateCells(setClassList)}
