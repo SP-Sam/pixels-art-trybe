@@ -44,7 +44,7 @@ npm run build
 ```bash
 npm start
 ```
-* Abra `http://localhost:3000` no navegador e inicie sua busca por Pokémons.
+* Abra `http://localhost:3000` no navegador e comece a desenhar com pixel art.
 
 ## Desenvolvedor
 <a href="https://www.linkedin.com/in/spsam/">
